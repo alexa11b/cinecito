@@ -1,3 +1,4 @@
+import 'package:cinecito/config/router/app_router.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,10 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: const Scaffold(body: Center(child: Text("Hello, cinecito"))),
+      routerConfig: appRouter,
     );
   }
 }
